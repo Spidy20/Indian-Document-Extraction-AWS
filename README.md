@@ -1,12 +1,12 @@
 # Indian🇮🇳 Legal Document Extractor using AWS Bedrock, Lambda, and SQS
 
 ### [Watch this tutorial►](https://youtu.be/YWmnD_QcZQU)
-<img src="https://github.com/Spidy20/AWS-Assistant-RAG-ChatBot/blob/master/yt_thumbnail.jpg">
+<img src="https://github.com/Spidy20/Indian-Document-Extraction-AWS/blob/master/Youtube_thumb.jpg">
 
 - In this tutorial, we'll be creating a GPT-4 AWS Helper ChatBot utilizing Langchain, Lambda, API Gateway, and PostgreSQL PGVector hosted on an EC2 instance as our Vector database.
 
 ### Implementation Architecture
-<img src="https://github.com/Spidy20/AWS-Assistant-RAG-ChatBot/blob/master/AWS-Assistant-ChatBot-Architecture.png">
+<img src="https://github.com/Spidy20/Indian-Document-Extraction-AWS/blob/master/Indian-Doocument-Extractor-POC-V.10.png">
 
 ### Used Services
 - **AWS Lambda**: Responsible for managing the backend of the Document Extractor using the Boto3 SDK.
