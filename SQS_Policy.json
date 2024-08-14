@@ -1,0 +1,29 @@
+{
+  "Version": "2012-10-17",
+  "Id": "__default_policy_ID",
+  "Statement": [
+    {
+      "Sid": "__owner_statement",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::179822996285:root"
+      },
+      "Action": "SQS:*",
+      "Resource": "arn:aws:sqs:ap-south-1:179822996285:IDE-SQS"
+    },
+    {
+      "Sid": "AllowS3BucketToSendMessage",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "s3.amazonaws.com"
+      },
+      "Action": "SQS:SendMessage",
+      "Resource": "arn:aws:sqs:ap-south-1:179822996285:IDE-SQS",
+      "Condition": {
+        "ArnLike": {
+          "aws:SourceArn": "arn:aws:s3:::temp-s3-bucket1-kushal"
+        }
+      }
+    }
+  ]
+}
